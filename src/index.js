@@ -22,8 +22,8 @@ module.exports =
 				return (`${one[round]} hundred ${one[reminder]}`).trim();
 			}
 			else {
-				newReminder = reminder % 10;
-				newRound = Math.floor(reminder / 10);
+				let newReminder = reminder % 10;
+				let newRound = Math.floor(reminder / 10);
 				return (`${one[round]} hundred ${ten[newRound]} ${one[newReminder]}`).trim();
 			}
 
